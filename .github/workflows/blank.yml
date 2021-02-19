@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run FOSSA scan and upload build data
+      - name: Run FOSSA scan and upload build result
         uses: fossa-contrib/fossa-action@v1
         with:
           fossa-api-key: ${{ secrets.FOSSA_API_KEY }}
